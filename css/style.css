@@ -11,17 +11,13 @@ header{
 header .logo{
     font-size: 30px;
     font-family: mada;
-    color: #c0c0f5de;
-    text-shadow: 2px 2px 4px #fff;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    color: #33384b;
+    font-weight: 800;
 }
 
-header .logo:hover{
-    color: #33384b;
-}
 
 header .logo span{
-    color: red;
+    color: #f33434;
 }
 
 header nav ul{
@@ -38,6 +34,7 @@ header nav ul li a{
     font-weight: 600;
     font-family: mada;
     text-decoration: none;
+    color: #33384b;
 }
 
 header nav ul li a:hover{
@@ -60,16 +57,10 @@ section.section-a{
     font-family: mada;
     font-size: 70px;
     font-weight: 800;
-    text-shadow: 2px 2px 4px #000;
     padding-bottom: 20px;
     text-shadow: 50px;
     line-height: 60px;
-    color: #c0c0f5de;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-
-.section-a .theme h1:hover{
-    color: #212c52;
+    color: #33384b;
 }
 
 .section-a .theme p{
@@ -83,18 +74,23 @@ section.section-a{
     display: inline-block;
     text-decoration: none;
     color: #fff;
-    background-color: rgb(252, 53, 53);
+    background-color: #ef4456;
+    background-image: linear-gradient(to bottom right, #ed5f47, #ee4445);
     padding: 18px 60px;
     margin-top: 30px;
+    border-radius: 2px;
     font-family: mada;
     font-weight: 100;
     font-size: .8em;
-    transition: background-color 0.3s, color 0.3s, transform 0.3s;
+    transition: background-color 0.3s, color 0.3s, 0.3s;
 }
 
 .section-a .theme a:hover{
-    background-color: #865e5e;
+    /* For browsers that do not support gradients */
+    background-color: #d32e3e;
+    background-image: linear-gradient(to bottom right, #ee4445, #ed5f47);
 }
+
 
 .section-a .theme-img{
     position: relative;
@@ -134,12 +130,12 @@ section.section-a{
 
 .section-b .social-icons span:nth-child(1){
     padding-bottom: 20px;
-    border-bottom: 2px solid #1c2ecc;
+    border-bottom: 2px solid #212c52;
 }
 
 .section-b .social-icons span:nth-child(2){
     padding-bottom: 20px;
-    border-bottom: 2px solid #000;
+    border-bottom: 2px solid #0a0a0a;
 }
 
 .section-b .social-icons span:nth-child(3){
@@ -170,17 +166,17 @@ section.section-a{
 }
 
 .section-b .g-content h1{
-    color: #fff;
+    color: #ebebed;
     font-family: mada;
     font-weight: 100;
     padding-bottom: 20px;
 }
 
 .section-b .g-content p{
-    color: #fff;
+    color: #ebebed;
     font-family: mada;
     font-size: 14px;
-    font-weight: 100;
+    font-weight: 200;
     text-align: start;
 }
 
@@ -213,14 +209,9 @@ section.section-a{
     font-size: 50px;
     font-weight: 800;
     margin-top: 7%;
-    color: #a8a8f5de;
-    text-shadow: 2px 2px 4px #fff;
+    color: #33384b;
     margin-left: 80%;
     transition: background-color 0.3s, color 0.3s, transform 0.3s;
-}
-
-.gallery .grid-50 h1:hover{
-    color: #33384b;
 }
 
 .content .pic-story{
@@ -250,7 +241,7 @@ section.section-a{
     left: 50%;
     max-width: 20px;
     position: relative;
-    border: 2px solid #f33434;
+    border: 1px solid #f33434;
     margin: 0 auto;
     transform: rotate(90deg);
 }
@@ -259,7 +250,7 @@ section.section-a{
     text-align: center;
     margin-top: 70px;
     padding-bottom: 50px;
-    font-weight: 800;
+    font-weight: 500;
     position: relative;
     color: #33384b;
     line-height: 20px;
@@ -284,6 +275,12 @@ section.section-a{
 .section-b-third-gallery-story .grid-44 h1{
     font-size: 70px;
     /* margin-left: 49%; */
+    color: #33384b;
+}
+
+.section-b-third-gallery-story .grid-25 p {
+    color: #33384b;
+    font-weight: 300;
 }
 
 .section-b-third-gallery-story .grid-25 {
@@ -305,6 +302,7 @@ section.section-a{
 
 .section-b-third-gallery-story .short-gallery .grid-17{
     margin-right: 20px;
+    height: 100%;
 }
 
 .section-b-fourth-gallery-story {
@@ -350,7 +348,8 @@ section.section-a{
 
 .section-b-fourth-gallery-story blockquote {
     color: #33384b;
-    font-size: 40px;
+    font-size: 30px;
+    vertical-align: super;
 }
 
 .section-b-fourth-gallery-story img{
@@ -454,8 +453,9 @@ section.section-a{
 }
 
 .section-d{
-    background-color: #f33434;
-    height: 700px;
+    background-color: #ee4445;
+    background-image: linear-gradient(to bottom, #ed5f47, #ee4445);
+    height: 1000px;
     width: 100%;
 }
 
@@ -463,17 +463,153 @@ section.section-a{
     border: 4px solid #212c52 ;
 }
 
+
+
 .section-d .grid-container .grid-flex-wrap{
+    /* display: flex;
+    flex-direction: row; */
     padding-left: 10px;
     padding-top: 20px;
+    text-align: center;
+}
+
+.section-d .grid-container .grid-flex-wrap h1{
+    font-size: 60px;
+    font-family: mada;
+    font-weight: 100;
+    color: #fff;
+    line-height: 100px;
+    padding-bottom: 70px;
+    border-bottom: 2px solid #fff;
+}
+
+.section-d .grid-container .grid-flex-wrap h1 span{
+    color: #f33434;
+    background-color: #fff;
 }
 
 
+.section-d .grid-container .grid-form-container .grid-20{
+    border-top: 1px solid #fff;
+    position: relative;
+    top: 150;
+    right: 40px;
+    height: 200px;
+    font-size: 25px;
+    color: #fff;
+    font-family: mada;
+    font-weight: 200;
+    line-height: 35px;
+}
+
+.section-d .grid-container .grid-form-container .grid-20 h1{
+    top: -60;
+    /* left: 25; */
+    position: absolute;
+    /* margin-bottom: px; */
+    font-size: 30;
+    /* padding: 5px; */
+    /* border-bottom: 1px solid #fff; */
+}
+
+.section-d .grid-container .grid-55{
+    width: 55%;
+    display: flex;
+    border-top: 1px solid #fff;
+    position: relative;
+    box-sizing: border-box;
+    top: 150;
+    height: 400px;
+    font-size: 25px;
+    color: #fff;
+    font-family: mada;
+    font-weight: 200;
+    line-height: 35px;
+}
+
+.section-d .grid-container .grid-55 form{
+    width: 100%;
+    box-sizing: border-box;
+    padding: 10px;
+    margin: 10px 0px;
+    background-color: rgba(212, 34, 34, 0);
+    resize: none;
+    color: #ebebed;
+    height: 400px;
+    font-size: 14px;
+    font-family: open sans;  
+}
+
+.section-d .grid-container .grid-55 form input{
+    padding: 2%;
+    margin-bottom: 10px;
+    width: 49%;
+    box-sizing: border-box;
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    resize: none;
+}
+
+.section-d .grid-container .grid-55 form input::placeholder{
+    color: #fff;
+}
 
 
+.section-d .grid-container .grid-55 form textarea{
+    width: 100%;
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    padding: 5%;
+    border: 1px solid #fff;
+    height: 300px;
+    resize: none;
+}
 
+.section-d .grid-container .grid-55 form textarea::placeholder{
+    color: #fff;
+}
 
+.section-d .grid-container .grid-55 form button{
+    margin-top: 10px;
+    padding: 15px 50px;
+    background-color: rgba(255, 0, 0, 0);
+    color: #fff;
+    border: 1px solid #fff;
+    transition: all 150ms ease-in-out;
+}
 
+.section-d .grid-container .grid-55 form button:hover{
+    background-color: #fff;
+    color: #ef4456;
+}
+
+.section-d .grid-container .grid-55 h1{
+    width: 90%;
+    top: -60;
+    left: 25;
+    position: absolute;
+    font-size: 30;
+}
+
+.section-d .grid-container .grid-25{
+    border-top: 1px solid #fff;
+    position: relative;
+    top: 150;
+    height: 200px;
+    left: 40px;
+    font-size: 25px;
+    color: #fff;
+    font-family: mada;
+    font-weight: 200;
+    line-height: 35px;
+}
+
+.section-d .grid-container .grid-25 h1{
+    top: -60;
+    position: relative;
+    font-size: 30;
+}
 
 
 
