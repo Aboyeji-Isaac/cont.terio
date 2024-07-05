@@ -631,6 +631,9 @@ section.section-a{
 
     /* Custom breakpoint for mobile devices */
     @media (max-width: 480px) {
+        *{
+            box-sizing: border-box;
+        }
         .mobile-grid-100 {
             width: 100%;
         }
