@@ -41,6 +41,17 @@ header nav ul li a:hover{
     color: #f33434;
 }
 
+.toggle-button {
+    font-size: 30px;
+    color: #33384b;
+    border: none;
+}
+
+.toggle-button:active{
+    transform: rotate(30deg) scale(0.9);
+
+}
+
 /*section-a*/
 
 section.section-a{
@@ -611,7 +622,58 @@ section.section-a{
     font-size: 30;
 }
 
+    /* Custom breakpoint for tablets */
+    @media (max-width: 768px) {
+        .tablet-grid-50 {
+            width: 50%;
+        }
+    }
+
+    /* Custom breakpoint for mobile devices */
+    @media (max-width: 480px) {
+        .mobile-grid-100 {
+            width: 100%;
+        }
+
+        .section-a .theme{
+            top: 0;
+            position: relative;
+        }
+    
+        .section-a .theme-img{
+            display: block;
+            position: relative;
+            
+            background-color: #ebebed;
+        }
+        
+        .section-a .theme-img img{
+            top: -300 !important;
+        }
+
+        .section-a .theme-img{
+            position: relative;
+            top: 200px;
+            background-color: #ebebed;
+            left: 20px;
+        }
+        
+        .section-a .theme-img img{
+            top: 200px;
+        }
+
+        .toggle-button {
+            margin-left: 90%;
+            top: -35;
+            margin-bottom: 20px;
+            display: flex;
+            position: relative;
+        }
+    }
 
 
 
 
+
+
+ 
