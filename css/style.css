@@ -622,6 +622,13 @@ section.section-a{
     font-size: 30;
 }
 
+/* Custum breakpoint for tablets */
+@media (min-width: 1024px) {
+    .toggle-button{
+        display: none;
+    }
+}
+
     /* Custom breakpoint for tablets */
     @media (max-width: 768px) {
         .tablet-grid-50 {
