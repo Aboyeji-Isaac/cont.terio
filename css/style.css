@@ -660,6 +660,8 @@ section.section-a{
     }
 
     nav ul{
+        border-radius: 5%;
+        height: 200px;
         position: absolute;
         padding: 30%;
         margin-top: 30px;
@@ -668,6 +670,18 @@ section.section-a{
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+    }
+
+    nav ul li{
+        padding-bottom: 50px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .show{
+        display: block;
     }
 
 }
