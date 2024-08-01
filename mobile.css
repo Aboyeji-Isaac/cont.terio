@@ -1,0 +1,92 @@
+@media (max-width:425px) {
+    :root {
+        --background: #ffffff;
+        --foreground: #09090b;
+        --card: #ffffff;
+        --card-foreground: #09090b;
+        --primary: #18181b;
+        --primary-foreground: #fafafa;
+        --secondary: #f4f4f5;
+        --secondary-foreground: #18181b;
+        --muted-foreground: #71717a;
+        --radius: 0.5rem;
+      }
+      
+      body {
+        background-color: var(--background);
+        font-family: Arial, sans-serif;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 100vh;
+      }
+      
+      .container {
+        max-width: 425px;
+        box-sizing: border-box;
+        text-align: center;
+        padding: 1rem;
+      }
+      
+      .title {
+        color: var(--primary);
+        font-size: 2rem;
+        font-weight: bold;
+        margin-bottom: 1rem;
+      }
+      
+      .subtitle {
+        color: var(--primary);
+        font-size: 3.5rem;
+        font-weight: 600;
+        margin-bottom: 0.5rem;
+      }
+      
+      .description {
+        color: var(--muted-foreground);
+        margin-bottom: 1.5rem;
+      }
+      
+      .button {
+        background-color: var(--secondary);
+        color: var(--secondary-foreground);
+        padding: 0.5rem 1rem;
+        border: none;
+        border-radius: var(--radius);
+        cursor: pointer;
+        transition: background-color 0.3s;
+      }
+      
+      .button:hover {
+        background-color: hsl(240, 4.8%, 80%); /* Slightly darker shade for hover effect */
+      }
+      
+      .image {
+        margin-top: 2rem;
+        /* height: 100px; */
+        width: 100%;
+        max-width: 600px;
+        border-radius: var(--radius);
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+      }
+      
+      .nav {
+        margin-top: 1.5rem;
+        display: flex;
+        gap: 1rem;
+        justify-content: center;
+      }
+      
+      .nav-link {
+        color: var(--muted-foreground);
+        text-decoration: none;
+        transition: color 0.3s;
+      }
+      
+      .nav-link:hover {
+        color: var(--primary);
+      }
+      
+}
