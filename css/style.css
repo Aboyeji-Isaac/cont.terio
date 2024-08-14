@@ -584,7 +584,7 @@ section.section-a{
 .section-d .grid-container .grid-55 form button{
     margin-top: 10px;
     padding: 15px 50px;
-    background-color: rgba(255, 0, 0, 0);
+    background-color: #ff000000;
     color: #fff;
     border: 1px solid #fff;
     transition: all 150ms ease-in-out;
@@ -622,7 +622,7 @@ section.section-a{
     font-size: 30;
 }
 
-@media(min-width:1024px){
+@media(min-width:769px){
     .toggle-button{
         display: none;
     }
