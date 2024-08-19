@@ -644,8 +644,8 @@ section.section-a{
     }
 
     nav{
+        right: 10px;
         position: relative;
-        z-index: 1;
     }
 
     nav ul{
@@ -656,18 +656,30 @@ section.section-a{
         margin-top: 30px;
         background-color: transparent;
         background-image: linear-gradient(to bottom, #e1e1e1cc, #f0f0ffcc) !important;
+        backdrop-filter: blur(5px);
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
+        z-index: 1;
     }
 
     nav ul li{
+        align-items: center;
         padding-bottom: 50px;
     }
 
     
-    .section-a .theme{
-        top: auto;
+    .section-a .theme h1{
+        margin-top: 200px;
+        font-size: 60px;
+    }
+
+    .section-a .theme-img{
+        top: -350;
+    }
+    .section-a .theme-img img{
+        margin-top: -200;
+        width: 300px;
     }
 
     .hidden{
