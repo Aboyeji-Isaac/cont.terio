@@ -629,8 +629,10 @@ section.section-a{
 }
 
 @media (max-width:425px) {
-    *{
+
+    .logo{
         all: unset;
+        font-size: 5px;
     }
     
       
@@ -642,10 +644,8 @@ section.section-a{
     }
 
     nav{
-        display: grid;
-        position: fixed;
-        grid-template-columns: 1fr;
-        margin-left: 100px;
+        position: relative;
+        z-index: 1;
     }
 
     nav ul{
@@ -663,6 +663,11 @@ section.section-a{
 
     nav ul li{
         padding-bottom: 50px;
+    }
+
+    
+    .section-a .theme{
+        top: auto;
     }
 
     .hidden{
