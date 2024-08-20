@@ -79,6 +79,7 @@ section.section-a{
     font-size: .9em;
     text-align: justify;
     font-weight: 100;
+    /* color: #33384b; */
 }
 
 .section-a .theme a{
@@ -622,13 +623,19 @@ section.section-a{
     font-size: 30;
 }
 
-@media(min-width:769px){
+@media(min-width:768px){
     .toggle-button{
         display: none;
     }
 }
 
 @media (max-width:425px) {
+    body{
+        overflow-x: hidden;
+        box-sizing: border-box;
+        width: 425px;
+        max-width: 425px;
+    }
 
     .logo{
         all: unset;
@@ -640,11 +647,11 @@ section.section-a{
         background: none !important;
         display: grid;
         position: relative;
-        margin-left: 100px;
+        margin-left: 150px;
     }
 
     nav{
-        right: 10px;
+        right: 50px;
         position: relative;
     }
 
@@ -674,12 +681,20 @@ section.section-a{
         font-size: 60px;
     }
 
+    .section-a .theme p{
+        width: 360px;
+    }
+
     .section-a .theme-img{
         top: -350;
     }
     .section-a .theme-img img{
         margin-top: -200;
         width: 300px;
+    }
+
+    .section-a .theme a{
+        z-index: 1;
     }
 
     .hidden{
@@ -689,28 +704,87 @@ section.section-a{
     .show{
         display: block;
     }
+
+    .section-b{
+        bottom: -300px;
+    }
 }
+
     @media(max-width: 320px){
+
         body{
-            margin: 0 ;
-            padding: 0;
+            box-sizing: border-box;
+            max-width: 320px;
+            overflow-x: hidden;
         }
-        .wrapper, .gridcontainer{
-        all: unset;
-        margin-top: 20px;
-        display: flex;
-        gap: 1rem;
-        justify-content: center;
-      }
-      
-      .nav-link {
-        color: var(--muted-foreground);
-        text-decoration: none;
-        transition: color 0.3s;
-      }
-      
-      .nav-link:hover {
-        color: var(--primary);
-      }
-      
+
+        .logo{
+            all: unset;
+            font-size: 5px;
+        }
+        
+          
+        .toggle-button{
+            background: none !important;
+            display: grid;
+            position: relative;
+            margin-left: 150px;
+        }
+    
+        nav{
+            right: 50px;
+            position: relative;
+        }
+    
+        nav ul{
+            border-radius: 5%;
+            height: 200px;
+            position: absolute;
+            padding: 30%;
+            margin-top: 30px;
+            background-color: transparent;
+            background-image: linear-gradient(to bottom, #e1e1e1cc, #f0f0ffcc) !important;
+            backdrop-filter: blur(5px);
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            z-index: 1;
+        }
+    
+        nav ul li{
+            align-items: center;
+            padding-bottom: 50px;
+        }
+
+        .section-a .theme h1{
+            font-size: 50px;
+        }
+
+        .section-a .theme p{
+            width: 300px;
+        }
+    
+        .section-a .theme-img{
+            top: -350;
+        }
+        .section-a .theme-img img{
+            margin-top: -150;
+            width: 250px;
+        }
+    
+        .section-a .theme a{
+            z-index: 1;
+        }
+    
+        .hidden{
+            display: none;
+        }
+    
+        .show{
+            display: block;
+        }
+
+        .section-b{
+            bottom: -300px;
+        }
 }
