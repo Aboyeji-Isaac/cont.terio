@@ -629,12 +629,11 @@ section.section-a{
     }
 }
 
-@media (max-width:425px) {
+@media (max-width:430px) {
     body{
         overflow-x: hidden;
         box-sizing: border-box;
-        width: 425px;
-        max-width: 425px;
+        max-width: 100%;
     }
 
     .logo{
@@ -677,11 +676,13 @@ section.section-a{
 
     
     .section-a .theme h1{
+        margin-left: 20px;
         margin-top: 200px;
         font-size: 60px;
     }
 
     .section-a .theme p{
+        margin-left: 20px;
         width: 360px;
     }
 
@@ -690,11 +691,11 @@ section.section-a{
     }
     .section-a .theme-img img{
         margin-top: -200;
-        width: 300px;
+        width: 350px;
     }
 
     .section-a .theme a{
-        z-index: 1;
+        margin-left: 110px;
     }
 
     .hidden{
@@ -706,8 +707,144 @@ section.section-a{
     }
 
     .section-b{
+        width: 100%;
         bottom: -300px;
     }
+
+    .section-b .social-icons{
+        display: flex;
+        position: relative;
+        top: -120;
+        clear: both;
+        z-index: 1;
+    }
+
+    .section-b .bg-dark{
+        height: 800px;
+        width: 100%;
+    }
+
+    .section-b .g-content{
+        top: 70;
+        left: -150;
+    }
+    .section-b .bg-content-dark{
+        display: flex;
+        flex-direction: column;
+        position: absolute;
+        margin-left: 0;
+        margin-bottom: 0;
+    }
+
+    .section-b .bg-content-dark img{
+        display: flex;
+        position: absolute;
+        clear: both;
+        left: -100;
+        width: 100%;
+    }
+
+    .section-b-gallery{
+        top: 100;
+    }
+
+}
+
+@media(max-width: 375px){
+
+    body{
+        box-sizing: border-box;
+        max-width: 100%;
+        overflow-x: hidden;
+    }
+
+    .logo{
+        all: unset;
+        font-size: 5px;
+    }
+    
+      
+    .toggle-button{
+        background: none !important;
+        display: grid;
+        position: relative;
+        margin-left: 150px;
+    }
+
+    nav{
+        right: 50px;
+        position: relative;
+    }
+
+    nav ul{
+        border-radius: 5%;
+        height: 200px;
+        position: absolute;
+        padding: 30%;
+        margin-top: 30px;
+        background-color: transparent;
+        background-image: linear-gradient(to bottom, #e1e1e1cc, #f0f0ffcc) !important;
+        backdrop-filter: blur(5px);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        z-index: 1;
+    }
+
+    nav ul li{
+        align-items: center;
+        padding-bottom: 50px;
+    }
+
+    .section-a .theme h1{
+        font-size: 50px;
+    }
+
+    .section-a .theme p{
+        width: 300px;
+    }
+
+    .section-a .theme-img{
+        top: -350;
+    }
+    .section-a .theme-img img{
+        margin-top: -150;
+        width: 250px;
+    }
+
+    .section-a .theme a{
+        margin-left: 80px;
+    }
+
+    .hidden{
+        display: none;
+    }
+
+    .show{
+        display: block;
+    }
+
+    .section-b{
+        width: 425px;
+        bottom: -300px;
+    }
+    .section-b .bg-dark{
+        height: 800px;
+        width: 100%;
+    }
+
+    .section-b .g-content{
+        top: 170;
+    }
+
+    .section-b .social-icons{
+        display: flex;
+        position: relative;
+        top: -120;
+        clear: both;
+        z-index: 1;
+    }
+
 }
 
     @media(max-width: 320px){
@@ -725,7 +862,7 @@ section.section-a{
         
           
         .toggle-button{
-            background: none !important;
+            background: none;
             display: grid;
             position: relative;
             margin-left: 150px;
@@ -756,24 +893,28 @@ section.section-a{
             padding-bottom: 50px;
         }
 
+        .section-a .theme{
+            top: 0;
+            justify-content: center;
+        }
+
         .section-a .theme h1{
-            font-size: 50px;
+            margin-top: 300;
+            font-size: 40px;
+            line-height: 3rem;
         }
 
         .section-a .theme p{
-            width: 300px;
-        }
-    
-        .section-a .theme-img{
-            top: -350;
-        }
-        .section-a .theme-img img{
-            margin-top: -150;
             width: 250px;
+        }
+
+        .section-a .theme-img{
+            top: -500;
+            right: 100;
         }
     
         .section-a .theme a{
-            z-index: 1;
+            margin-left: 110px;
         }
     
         .hidden{
@@ -783,8 +924,19 @@ section.section-a{
         .show{
             display: block;
         }
-
+    
         .section-b{
+            width: 425px;
             bottom: -300px;
         }
+        .section-b .bg-dark{
+            height: 500px;
+            width: 100%;
+        }
+    
+        .section-b .g-content{
+            top: 170;
+        }
+
+
 }
