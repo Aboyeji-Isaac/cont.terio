@@ -788,10 +788,6 @@ section.section-a{
         margin-left: 120px;
     }
 
-    .section-b-third-gallery-story{
-        margin-top: 320em;
-    }
-
     .gallery-display .grid-25{
         margin-top: 50px;
         margin-bottom: 10px;
@@ -799,6 +795,38 @@ section.section-a{
 
     .content .display-pic{
         margin-bottom: 10px;
+    }
+
+    .section-b-third-gallery-story{
+        overflow: visible;
+        margin-top: 320em;
+        margin-left: 100px;
+        margin-bottom: 200px;
+    }
+
+    .grid-40 .display-pic{
+        width: 150px;
+    }
+
+    .section-b-third-gallery-story .medium h1{
+        font-size: 40px;
+        margin-top: -230;
+        margin-left: 200px;
+    }
+
+    .section-b-third-gallery-story .p-content p{
+        margin-top: -50;
+        margin-left: 200;
+        margin-right: -150;
+        line-height: 20px;
+        padding-bottom: 50px;
+        text-align: justify;
+    }
+
+    .section-b-third-gallery-story .nth-p-content p{
+        margin-top: -170;
+        margin-right: 70px;
+        text-align: justify;
     }
 
 }
