@@ -307,9 +307,9 @@ section.section-a{
     position: relative;
     width: 600px;
     top: 50;
-    /* top: -377; */
-    /* margin-left: 40%;
-    overflow: hidden; */
+    top: -377;
+    margin-left: 40%;
+    /* overflow: hidden;  */
 }
 
 .section-b-third-gallery-story .short-gallery .grid-17{
